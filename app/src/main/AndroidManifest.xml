@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ScreenshotProtection"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ScreenshotProtection">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SecureFlagActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ScreenshotProtection"/>
+        <activity
+            android:name=".activities.SecureFlagButtonActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ScreenshotProtection"/>
+        <activity
+            android:name=".activities.SecureFlagLifeCycleActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ScreenshotProtection"/>
+        <activity
+            android:name=".activities.WindowFocusAndSecureFlagActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ScreenshotProtection"/>
+        <activity
+            android:name=".activities.WindowFocusAndDialogActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ScreenshotProtection"/>
+        <activity
+            android:name=".activities.ComposableLifecycleActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ScreenshotProtection"/>
+        <activity
+            android:name=".activities.ScreenshotEnableActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ScreenshotProtection"/>
+        <activity
+            android:name=".activities.PauseResumeActivity"
+            android:exported="false"
+            android:theme="@style/AppBaseTheme"/>
+
+    </application>
+
+</manifest>
